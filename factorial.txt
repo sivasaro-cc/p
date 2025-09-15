@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factorial calculator</title>
+</head>
+<body>
+<h2>Factorial calculator</h2>
+<input type="number"id="number input"place holder="Enter a number">
+<button on click="calculate factorial()">
+calculate</button>
+<aid="result"></p>
+<script>
+function factorial(n) {
+if(n==0||n===1)return1;
+return n*factorial(n-1);
+}
+function calculate factorial() {
+const input=document.getElementByid
+("number input")value;
+const num=parseInt(input);
+if(is NAN(num)||num<0) {
+document.getElementByid("result")inner text="please enter a number";
+return;
+}
+const result=factorial(num);
+document.getElementByid("result")inner text=factorial of $(num)is $(result);
+}
+</script></body></html>
